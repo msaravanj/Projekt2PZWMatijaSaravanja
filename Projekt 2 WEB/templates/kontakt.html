@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+
+{% block link_css %} <link rel="stylesheet"  href="{{ url_for('static', filename='styles/style.css') }}"> {% endblock %}
+
+{% block body %}
+
+    
+    <section id="services">
+        <div class="container">
+          <div class="row">
+          <div class="col-md-4 services">
+            <h4>Šahovski klub "Goran" Bibinje</h4>
+            <p>Trg dr. Franje Tuđmana 2</p>
+            <p>23205 Bibinje</p>
+            <p>Tel.: 023 262 250</p>
+            <p>E-mail: sarosaravanja11@gmail.com</p>
+            <p>Predsjednik kluba: John Ivan Krstičević</p>
+            
+
+            <section class="weather">
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <section>
+                        <h3>{{ weather.dt | datetime }}</h3>
+                        <div class="card" >
+                          <h4 class="card-header">
+                            {{ weather.name }}
+                          </h4>
+                          <div class="card-body">
+                            <h5 class="card-title">{{ weather.weather[0].description }} <img src="http://openweathermap.org/img/wn/10d@2x.png" alt=""></h5>
+                            <div class="card-text">
+                              <p>Temperatura: {{ weather.main.temp }} °C </p>
+                              <p>Vlažnost zraka: {{ weather.main.humidity }} %</p>
+                              <p>Vjetar: {{ weather.wind.speed }} m/s </p>
+                            </div>
+                          </div>
+                        </section>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            
+          </div>
+          
+          <div class="col-md-8 services">
+            <img src="{{ url_for('static', filename='images/chess3.jpg') }}" class="img-fluid" alt="Responsive image">
+            <form>
+                <div class="form-group">
+                  <label for="exampleFormControlInput1" style="padding-top: 100px;">E-mail adresa</label>
+                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="ime@example.com">
+                </div>
+                
+            
+                <div class="form-group">
+                  <label for="exampleFormControlTextarea1">Tvoja poruka</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Napišite poruku..."></textarea>
+                  
+                </div>
+                <button type="button" class="btn btn-primary">Pošalji</button>
+              </form>
+          </div>
+
+         
+        </div>
+        </div>
+      </section>
+  {% endblock %}
+
+
+

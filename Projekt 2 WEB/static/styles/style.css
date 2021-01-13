@@ -1,0 +1,137 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    font-family: sans-serif
+}
+
+.navbar navbar-expand-lg navbar-light bg-light{
+    font-style: bold;
+}
+
+#nav-bar{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar{
+
+ background-image: linear-gradient(to right, Black, Black); 
+}
+
+.navbar-nav li{
+    padding: 0 10px;
+
+}
+
+.navbar-nav li a {
+    color: white !important;
+    font-weight: 600;
+    float: right;
+    text-align: left;
+}
+
+.fa-bars{
+    color:black;
+    font-size: 30px !important;
+}
+
+.navbar-toggler{
+    outline: none !important;
+
+    
+}
+
+#banner{
+    
+    size: 100%;
+    padding-bottom: 30px;
+
+}
+
+.title h1{
+    color: black;
+    font-family: 'Abril Fatface';
+  
+    font-size: 40 px;
+    
+    
+}
+
+.services{
+    padding: 20px;
+}
+
+.services h4{
+    padding: 5px;
+    margin-top: 25px;
+    text-align: center;
+}
+
+
+.services h6 {
+    padding: 5px;
+    padding-left: 40px;
+    margin-top: 25px;
+}
+
+#footer{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+    color: white;
+    background-image: linear-gradient(to right, Black, Black); 
+
+}
+
+#footer h6{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 30px;
+    padding-bottom: 25px;
+}
+
+@media screen and (min-width: 40em) {
+    article {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        column-gap: 20px;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav li {
+        flex: 1;
+    }
+}
+
+@media screen and (min-width: 70em) {
+    main {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        column-gap: 20px;
+    }
+
+    article {
+        margin-bottom: 0;
+    }
+
+    footer {
+        border-top: 1px solid #ccc;
+        margin-top: 2em;
+    }
+}
+
+
+

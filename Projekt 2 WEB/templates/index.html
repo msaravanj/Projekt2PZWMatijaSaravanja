@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block link_css %} <link rel="stylesheet"  href="{{ url_for('static', filename='styles/style.css') }}"> {% endblock %}
+
+{% block body %}
+
+
+
+<section id="banner">
+<article class="index-intro">
+  <div class="container">
+    <div class="row">
+      <div class="title">
+        <img src="{{ url_for('static', filename='images/bannerimg.jpeg') }}" class="img-fluid" alt="Responsive image">
+      </div>
+      
+    </div>
+
+  </div>
+</article>
+</section>
+
+<section id="services">
+  <div class="container">
+    <div class="row">
+    <div class="col-md-4 services">
+      <h4>O klubu</h4>
+      <p>Šahovski klub "Goran" Bibinje osnovan je 1971. godine u Bibinjama pokraj Zadra. ŠK "Goran" je najtrofejniji šahovski klub u Zadarskoj županiji. Prva momčad nastupa u 1.b hrvatskoj ligi, dok druga momčad nastupa u 3. ligi - jug. Juniorska ekipa nastupa u 2. juniorskoj ligi. Svake godine održava se škola šaha kojom se želi zainteresirati što više mladih za ovu zanimljivu igru kroz koju će razvijati svoje moždane vijuge.</p>
+      
+    </div>
+    <div class="col-md-4 services" style="text-align: center;">
+      <div class="embed-responsive embed-responsive-4by3">
+        <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d716.6570128033253!2d15.286683688150998!3d44.070388598687934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4761e4c4c9202e0f%3A0x4021f13043befdef!2sUl.%20dr.%20Franje%20Tu%C4%91mana%202%2C%2023205%2C%20Bibinje!5e0!3m2!1sen!2shr!4v1605808288192!5m2!1sen!2shr"></iframe>
+      </div>
+    </div>
+    <div class="col-md-4 services " style="text-align: center;">
+      <h6>Posjetite našu Facebook stranicu!</h6>
+      <a href="https://www.facebook.com/%C5%A0ahovski-klub-Goran-Bibinje-1621445994801856">
+        <img src="{{ url_for('static', filename= 'images/fb1.png') }}" alt="Facebook" class="img-fluid" alt="Responsive image">
+      </a>
+    </div>
+  </div>
+  </div>
+</section>
+
+
+{% endblock %}
