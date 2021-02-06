@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block link_css %} <link rel="stylesheet"  href="{{ url_for('static', filename='styles/style.css') }}"> {% endblock %}
+{% block body %}
+
+
+<section id="services">
+  <div class="container">
+    <div class="row">
+    <div class="col-md-0 services">
+      
+    </div>
+    
+    <div class="col-md-12 services">
+      <div class="error">
+        <div class="card" style="width:100%;">
+            <img src="{{ url_for('static', filename='images/fnf.png') }}" class="card-img-top" alt="..."  style="position:relative">
+            <div class="card-body">
+              
+              <p class="card-text"></p>
+              <a href="{{ url_for('index') }}" class="btn btn-primary" style="width: 100%;" >POVRATAK NA POČETNU STRANICU</a>
+            </div> 
+          </div>
+    </div>
+    </div>
+    <div class="col-md-0 services">
+       
+    </div>
+  </div>
+  </div>
+</section>
+   
+    
+
+{% endblock %}

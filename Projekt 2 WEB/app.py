@@ -7,7 +7,7 @@ from datetime import datetime
 
 app = Flask(__name__)
 
-app.config['BOOTSTRAP_BOOTSWATCH_THEME'] = 'united'
+app.config['BOOTSTRAP_BOOTSWATCH_THEME'] = 'flatly'
 bootstrap = Bootstrap(app)
 cache = Cache(app, config={'CACHE_TYPE': 'simple'})
 
@@ -39,6 +39,6 @@ def kontakt():
 
 @app.errorhandler(404)
 def invalid_route(e):
-    return render_template('button.html')    
+    return render_template('error404.html')    
 
 
